@@ -1,0 +1,2 @@
+d:\Project7\Debug\Project7.exe
+d:\Project7\Debug\Project7.pdb

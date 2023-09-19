@@ -1,0 +1,4 @@
+﻿  assign11-1RegularCustomer.cpp
+d:\Project7\assign11-1RegularCustomer.cpp(19,20): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+d:\Project7\assign11-1RegularCustomer.cpp(29,20): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+  Project7.vcxproj -> d:\Project7\Debug\Project7.exe
