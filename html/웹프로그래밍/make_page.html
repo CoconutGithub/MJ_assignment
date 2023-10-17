@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="kr">
+    <head>
+        <title>
+            CSS3 Page
+        </title>
+        <style>
+            /*글자 크기 속성*/
+            p:nth-child(1){font-size: 50px;}
+            p:nth-child(2){font-size: 100%;}
+            p:nth-child(3){font-size: 150%;}
+            p:nth-child(4){font-size: 200%;}
+
+            /*글자 폰트 속성*/
+            .font_arial{font-family: Arial;}
+            .font_roman{font-family: 'Verdana';}
+            .font_big{font-size: 2em;}
+            .font_italic{font-style: italic;}
+            .font_bold{font-weight: bold;}
+            .font_center{text-align: center;}
+
+            /*버튼 만들기*/
+            .button{
+                width: 150px;height: 70px;
+                background-color: #FF6A00;
+                border: 10px solid #FFFFFF;
+                border-radius: 30px;
+                box-shadow: 5px 5px 5px #A9A9A9;
+            }
+            .button>a{
+                display: block;
+                line-height: 70px;/*위 박스 높이인 70px로 같이 맞춰야 중앙 정렬*/
+                text-decoration: none;/*앵커의 밑줄 제거(데코레이션 효과 제거)*/
+            }
+
+            /*박스 속성*/
+            /* div{
+                width:100px; height: 100px;     /*글자가 들어갈 박스의 가로 세로
+                background-color: red;
+                border: thick dashed black;     /*박스 바깥의 경계
+                margin: 10px; padding: 30px;    /*margin:가장 바깥의 여백 크기,padding:박스 안에서 글자을 어느정도 띄울지
+            } */
+            
+            /*박스 보더 요소들*/
+            .box{
+                border-width: thick;
+                border-style: dashed;
+                border-color: black;
+                border-radius: 50px 40px 20px 10px;/*왼위 오위 오아래 왼아래*/
+            }
+
+            /*박스 가시 속성*/
+            #box{
+                display: inline-block;
+                background-color: red;
+                width: 100px; height: 50px;
+                margin: 10px;
+            }
+
+            /*위치 속성*/
+            .box1{
+                width: 100px; height: 100px;
+                position:absolute;/*절대 위치(페이지에서 간격 값만 받아서 그 위치에 띄움*/
+            }
+            .box1:nth-child(1){
+                background-color: red;
+                left: 10px; top: 10px;
+                z-index: 100;/*겹치면 인덱스가 높은게 위로 옴*/
+            }
+            .box1:nth-child(2){
+                background-color: green;
+                left: 50px; top: 50px;
+                z-index: 10;
+            }
+            .box1:nth-child(3){
+                background-color: blue;
+                left: 90px; top: 90px;
+                z-index: 1;
+            }
+            body>div{/*위에 글자들과 겹치는 박스들을 따로 넣을 공간 생성*/
+                width: 400px;height: 100px;
+                border: 3px solid black;
+                position: relative;/*이 박스를 기준으로 box1박스들이 절대 위치를 잡음*/
+                overflow: scroll;/*넘치는 부분을 스크롤로 만듦(hidden을 쓰면 그냥 숨김*/
+            }
+        </style>
+    </head>
+    <body>
+        <p>Lorem ipsum dolor sir amet, consectetur adipiscing elit.</p>
+        <p>Lorem ipsum dolor sir amet, consectetur adipiscing elit.</p>
+        <p>Lorem ipsum dolor sir amet, consectetur adipiscing elit.</p>
+        <p>Lorem ipsum dolor sir amet, consectetur adipiscing elit.</p>
+
+
+        <div class="box">
+            <h1>Lorem ipsum dolor sir amet</h1>
+        </div>
+
+        <p>의미 없는 더미 객체</p>
+        <span>더미 객체</span>
+        <div id="box">대상 객체</div>
+        <span>더미 객체</span>
+        <p>의미 없는 더미 객체</p>
+
+        <h1 class="font_arial">Lorem ipsum</h1>
+        <p class="font_roman">Lorem ipsum</p>
+        <p class="font_big font_italic font_bold font_center">Lorem ipsum dolor amet</p>
+
+        <div class="button">
+            <a href="#" class="font_big font_italic font_bold font_center">Click</a>
+        </div>
+
+        <div>
+            <div class="box1"></div>
+            <div class="box1"></div>
+            <div class="box1"></div>
+        </div>
+
+    </body>
+</html>

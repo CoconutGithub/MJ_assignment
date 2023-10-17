@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+body {
+  padding: 0 20px;
+}
+header {
+  padding: 40px 50px;
+}
+header h1{
+  font-size: 30px;
+}
+header h2 {
+  font-size: 15px;
+  color: gray;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid gray;
+  border-left: none;
+  border-right: none;
+  margin: 30px 0;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
+nav ul li {
+  padding: 5px 20px;
+  color: gray;
+}
+nav ul li:hover {
+  color: black;
+  font-weight: 500;
+}
+nav ul li ul {
+  display: none;
+}
+nav ul li:hover ul {
+  display: flex;
+  position: absolute;
+}
+form {
+  border: 1px solid gray;
+  border-radius: 15px;
+  display: flex;
+  height: 26px;
+}
+form input {
+  padding:7px;
+}
+
+form input:nth-child(1) {
+  border-radius: 15px 0 0 15px;
+}
+form input:nth-child(2) {
+  border-radius: 0 15px 15px 0;
+}
+
+article h1{
+  font-size: 30px;
+  font-weight: 500;
+}
+article p {
+  font-size: 13px;
+}
+
+main{
+  display: flex;
+}
+
+main section {
+  max-width: 80%;
+}
+main section article:nth-child(1)::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: gray;
+  margin: 20px 0;
+}
+main section article:nth-child(2)::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: gray;
+  margin: 20px 0;
+}
+aside h3{
+  font-weight: 500;
+}
+aside ul li {
+  font-size: 15px;
+}
+aside ul li a {
+  text-decoration: none;
+  color: gray;
+  display: block;
+  text-align: center;
+}
+aside ul li a:hover {
+  color: black;
+}
+
+aside div ul {
+  list-style: none;
+}
